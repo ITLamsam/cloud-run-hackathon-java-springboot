@@ -57,7 +57,7 @@ public class Application {
   public String index(@RequestBody ArenaUpdate arenaUpdate) {
     System.out.println(arenaUpdate);
     String[] commands = new String[]{"F", "R", "L", "T"};
-    int i = 0;
+    int i = new Random().nextInt(4);
     return commands[i];
   }
 
